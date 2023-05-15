@@ -1,9 +1,16 @@
 import './App.css'
+import {Header} from './components'
 
 function App() {
 
   return (
-    <div>Home Page</div>
+    <>
+      <Header />
+      <main>
+      </main>
+      <footer>
+      </footer>
+    </>
   )
 }
 
