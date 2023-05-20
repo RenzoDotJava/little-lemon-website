@@ -1,0 +1,67 @@
+.highlights {
+	padding: 40px 10%;
+	transition: all 0.5s ease;
+}
+
+.highlights > :nth-child(1) {
+	display: flex;
+	flex-direction: column;
+	transition: all 0.5s ease;
+	gap: 10px;
+}
+
+.highlights > :nth-child(1) h1 + div {
+	display: flex;
+	align-items: center;
+}
+
+.highlights > :nth-child(2) {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+	gap: 50px;
+	margin-top: 20px;
+}
+
+@media (min-width: 480px) {
+	.highlights {
+		padding: 40px 15%;
+	}
+}
+
+@media (min-width: 640px) {
+	.highlights {
+		padding: 40px 20%;
+	}
+}
+
+@media (min-width: 768px) {
+	.highlights {
+		padding: 40px 5%;
+	}
+
+	.highlights > :nth-child(1) {
+		display: flex;
+		flex-direction: row;
+		margin-top: 40px;
+		justify-content: space-between;
+		gap: 0;
+	}
+}
+
+@media (min-width: 1024px) {
+	.highlights {
+		padding: 40px 10%;
+	}
+}
+
+@media (min-width: 1280px) {
+	.highlights {
+		padding: 40px 15%;
+	}
+}
+
+@media (min-width: 1536px) {
+	.highlights {
+		padding: 40px 20%;
+	}
+}

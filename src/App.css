@@ -1,0 +1,73 @@
+:root {
+	--primary-color-1: #495e57;
+	--primary-color-2: #f4ce14;
+	--secondary_color_1: #ee9972;
+	--secondary_color_2: #fbdabb;
+	--secondary_color_3: #edefee;
+	--secondary_color_4: #333333;
+}
+
+.container {
+	display: grid;
+	min-height: 100vh;
+	grid-template-columns: 100%;
+	grid-template-rows: auto 1fr;
+	grid-template-areas: 'header' 'main';
+}
+
+.display_title {
+	font-family: 'Markazi Text', serif;
+	font-size: 54px;
+	transition: all 0.5s ease;
+	font-weight: 400;
+}
+
+.subtitle {
+	font-family: 'Markazi Text', serif;
+	font-size: 40px;
+	font-weight: 400;
+}
+
+.lead_text {
+	font-family: 'Karla', serif;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.section_title {
+	font-family: 'Karla', serif;
+	font-size: 20px;
+	font-weight: 800;
+}
+
+.section_categories {
+	font-family: 'Karla', serif;
+	font-size: 16px;
+	font-weight: 800;
+}
+
+.card_title {
+	font-family: 'Karla', serif;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.paragraph_text {
+	font-family: 'Karla', serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	max-width: 24ch;
+}
+
+.highlight_text {
+	font-family: 'Karla', serif;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+@media (min-width: 768px) {
+	.display_title {
+		font-size: 64px;
+	}
+}

@@ -1,3 +1,5 @@
-import {Header} from './header';
+import Header from './header';
+import Content from './content';
+import Footer from './footer';
 
-export {Header};
+export {Header, Content, Footer};

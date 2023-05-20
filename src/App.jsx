@@ -1,16 +1,13 @@
 import './App.css'
-import {Header} from './components'
+import {Header, Content, Footer} from './components'
 
 function App() {
 
   return (
-    <>
+    <div className='container'>
       <Header />
-      <main>
-      </main>
-      <footer>
-      </footer>
-    </>
+      <Content />
+    </div>
   )
 }
 

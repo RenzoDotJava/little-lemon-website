@@ -1,7 +1,7 @@
-import React from 'react'
 import logo from '../../assets/logo.png'
+import "./Header.css"
 
-export const Header = () => {
+const Header = () => {
   return (
     <header>
       <img
@@ -9,14 +9,16 @@ export const Header = () => {
       />
       <nav>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Menu</li>
-          <li>Reservations</li>
-          <li>Order Online</li>
-          <li>Login</li>
+          <li><a className='card_title'>Home</a></li>
+          <li><a className='card_title'>About</a></li>
+          <li><a className='card_title'>Menu</a></li>
+          <li><a className='card_title'>Reservations</a></li>
+          <li><a className='card_title'>Order Online</a></li>
+          <li><a className='card_title'>Login</a></li>
         </ul>
       </nav>
     </header>
   )
 }
+
+export default Header
