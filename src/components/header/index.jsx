@@ -1,3 +1,4 @@
+import {NavLink} from 'react-router-dom'
 import logo from '../../assets/logo.png'
 import "./Header.css"
 
@@ -9,12 +10,12 @@ const Header = () => {
       />
       <nav>
         <ul>
-          <li><a className='card_title'>Home</a></li>
-          <li><a className='card_title'>About</a></li>
-          <li><a className='card_title'>Menu</a></li>
-          <li><a className='card_title'>Reservations</a></li>
-          <li><a className='card_title'>Order Online</a></li>
-          <li><a className='card_title'>Login</a></li>
+          <li><NavLink className='card_title' to="/">Home</NavLink></li>
+          <li><NavLink className='card_title' to="/">About</NavLink></li>
+          <li><NavLink className='card_title' to="/">Menu</NavLink></li>
+          <li><NavLink className='card_title' to="/booking">Reservations</NavLink></li>
+          <li><NavLink className='card_title' to="/">Order Online</NavLink></li>
+          <li><NavLink className='card_title' to="/">Login</NavLink></li>
         </ul>
       </nav>
     </header>

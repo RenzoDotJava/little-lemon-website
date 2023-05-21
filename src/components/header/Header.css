@@ -4,7 +4,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px 10%;
-  transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 
 header > img {
@@ -24,6 +24,15 @@ ul {
 	list-style: none;
 	display: flex;
 	gap: 2rem;
+}
+
+li > :first-child {
+	text-decoration: none;
+	color: black;
+}
+
+li > :first-child:hover {
+	text-decoration: underline;
 }
 
 @media (min-width: 480px) {

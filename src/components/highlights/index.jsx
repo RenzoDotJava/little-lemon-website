@@ -28,7 +28,7 @@ const menu = [
 
 const Highlights = () => {
   return (
-    <section className="highlights">
+    <section id="highlights" className="highlights">
       <div>
         <h1 className="display_title">This weeks specials!</h1>
         <div>

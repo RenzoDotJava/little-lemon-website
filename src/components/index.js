@@ -1,5 +1,6 @@
 import Header from './header';
-import Content from './content';
 import Footer from './footer';
+import HeroSection from './hero-section';
+import Highlights from './highlights';
 
-export {Header, Content, Footer};
+export {Header, Footer, HeroSection, Highlights};

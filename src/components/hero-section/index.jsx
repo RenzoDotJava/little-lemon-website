@@ -4,7 +4,7 @@ import "./HeroSection.css"
 
 const HeroSection = () => {
   return (
-    <section className='hero'>
+    <section id="hero" className='hero'>
       <div>
         <h1 className='display_title'>Little Lemon</h1>
         <h2 className='subtitle'>Chicago</h2>
