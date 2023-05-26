@@ -1,5 +1,5 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import {Layout, HomePage, BookingPage} from "./pages";
+import {Layout, HomePage, BookingPage, BookingConfirmationPage} from "./pages";
 import './App.css'
 
 function App() {
@@ -8,8 +8,11 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="" element={<HomePage/>}/>
-          <Route path="booking" element={<BookingPage/>}/>
+          <Route path="" element={<HomePage />} />
+          <Route path="booking">
+            <Route path="" element={<BookingPage />} />
+            <Route path="confirmation" element={<BookingConfirmationPage />} />
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>

@@ -1,0 +1,75 @@
+.confirmed {
+	display: flex;
+	padding: 10% 10%;
+	height: 100%;
+	background-color: var(--primary-color-1);
+	transition: all 0.5s ease;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.confirmed > :first-child {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	height: fit-content;
+	gap: 30px;
+	border: 1px solid white;
+	border-radius: 1.5rem;
+	background-color: white;
+	padding: 2rem;
+	transition: all 0.5s ease;
+}
+
+.confirmed > :first-child > h1 {
+	text-align: center;
+	font-size: 48px !important;
+}
+
+.confirmed > :first-child > div {
+	display: grid;
+	row-gap: 5px;
+	grid-template-columns: 1fr 1fr;
+}
+
+.confirmed > :first-child > div > :nth-child(odd) {
+	font-weight: bold;
+}
+
+.confirmed > :first-child > div > :nth-child(even) {
+	justify-self: flex-end;
+	align-self: flex-end;
+}
+
+@media (min-width: 768px) {
+	.confirmed {
+		padding: 10% 20%;
+	}
+	.confirmed > :first-child {
+		gap: 40px;
+		padding: 2rem 3.5rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.confirmed {
+		padding: 10% 25%;
+	}
+
+	.confirmed > :first-child {
+		gap: 40px;
+		padding: 4rem 4.5rem;
+	}
+}
+
+@media (min-width: 1280px) {
+	.confirmed {
+		padding: 10% 30%;
+	}
+
+	.confirmed > :first-child {
+		gap: 45px;
+		padding: 4.5rem 5.5rem;
+	}
+}

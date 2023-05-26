@@ -7,10 +7,6 @@
 	--secondary_color_4: #333333;
 }
 
-main {
-	grid-area: main;
-}
-
 .display_title {
 	font-family: 'Markazi Text', serif;
 	font-size: 54px;
@@ -62,8 +58,8 @@ main {
 	font-weight: 500;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
 	.display_title {
 		font-size: 64px;
 	}
-}
+} */

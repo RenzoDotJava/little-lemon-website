@@ -1,0 +1,37 @@
+.booking {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 20px 10% 40px 10%;
+  height: 100%;
+	background-color: var(--primary-color-1);
+	transition: all 0.5s ease;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.booking > h1 {
+	color: var(--secondary_color_3);
+}
+
+.booking > form {
+  display: flex;
+  flex-direction: column;
+	gap: 20px;
+}
+
+.booking > form > div {
+  display: flex;
+  flex-direction: column;
+	gap: 5px;
+}
+
+.booking > form > :last-child {
+  margin-top: 20px;
+}
+
+@media (min-width: 480px) {
+	.booking {
+		padding: 20px 10% 100px 10%;
+	}
+}

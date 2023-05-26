@@ -1,0 +1,48 @@
+input[type='text'],
+input[type='date'],
+input[type='number'] {
+	font-family: 'Karla', serif;
+	background-color: #fff;
+	border-radius: 6px;
+	border: 1px solid black;
+	box-sizing: border-box;
+	display: inline-block;
+	font-size: inherit;
+	height: 40px;
+	line-height: 40px;
+	outline: 0;
+	padding: 0 15px;
+	transition: all 0.2s ease;
+}
+
+input[type='text']:focus,
+input[type='date']:focus,
+input[type='number']:focus {
+	border: 2px solid #068eef;
+	outline: 0;
+}
+
+input[type='text']:disabled,
+input[type='date']:disabled,
+input[type='number']:disabled {
+	background: #ebebe4;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='submit'] {
+	background-color: var(--primary-color-2);
+	border-radius: 20px;
+	padding: 15px 40px;
+	border: none;
+	transition: all 0.2s ease;
+}
+
+input[type='submit']:hover {
+	background-color: var(--secondary_color_1);
+	cursor: pointer;
+}

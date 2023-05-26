@@ -1,13 +1,4 @@
-header {
-	grid-area: header;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px 10%;
-	transition: all 0.5s ease;
-}
-
-header > img {
+header > :first-child {
 	width: 170px;
 	height: 57px;
 	transition: all 0.5s ease;
@@ -40,7 +31,7 @@ li > :first-child:hover {
 		padding: 20px 15%;
 	}
 
-	header > img {
+	header > :first-child {
 		width: 200px;
 		height: 72px;
 	}
@@ -65,6 +56,10 @@ li > :first-child:hover {
 
 	header > nav {
 		display: block;
+	}
+
+	header > :last-child {
+		display: none;
 	}
 }
 
