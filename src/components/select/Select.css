@@ -27,3 +27,7 @@ select:focus {
 select:disabled {
 	background: #ebebe4;
 }
+
+.select_error {
+	border: 2px solid rgb(231, 0, 0) !important;
+}

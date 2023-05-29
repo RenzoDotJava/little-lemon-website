@@ -42,7 +42,14 @@ input[type='submit'] {
 	transition: all 0.2s ease;
 }
 
-input[type='submit']:hover {
-	background-color: var(--secondary_color_1);
+input[type='submit']:not([disabled]):hover {
 	cursor: pointer;
+}
+
+input[type='submit']:not([disabled]):active {
+	background-color: var(--secondary_color_1);
+}
+
+.input_error {
+	border: 2px solid rgb(231, 0, 0) !important;
 }

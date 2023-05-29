@@ -1,9 +1,9 @@
 import {forwardRef} from 'react'
 import "./Select.css"
 
-const Select = forwardRef(({children, ...props}, ref) => {
+const Select = forwardRef(({children, error, ...props}, ref) => {
   return (
-    <select {...props} ref={ref}>
+    <select {...props} className={`${error ? 'select_error' : ''}`} ref={ref}>
       {children}
     </select>
   )
